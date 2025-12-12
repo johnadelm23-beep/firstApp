@@ -6,7 +6,7 @@ void main(){
   runApp(MaterialApp(
     home:Scaffold(
       appBar: AppBar(
-        backgroundColor:Colors.indigoAccent,
+        backgroundColor:Colors.deepPurpleAccent,
         title: Text("Page Title"),
        // centerTitle: true,
         actions: [
@@ -20,9 +20,12 @@ void main(){
         ],
         leading: Icon(Icons.menu),
       ),
-      body:Image.network('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f',
-    fit: BoxFit.cover,
+      body:Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GijKRxEro9AgxDfV3Y6i4U93FN_FGgq15A&usqp=CAU",
+        width: 100000,
+        height: 100000,
+
       ),
+     
       bottomNavigationBar:BottomNavigationBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
         BottomNavigationBarItem(icon: Icon(Icons.calendar_today),label: "Appointment"),
